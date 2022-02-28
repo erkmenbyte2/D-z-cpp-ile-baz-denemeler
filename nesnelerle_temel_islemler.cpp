@@ -17,6 +17,11 @@ public:
 	void yazdr() {
 		cout<<s1<<"mevcut değer"<<endl;
 	}
+	void faktoryel_hesabı(int degr) {
+		
+	return faktoryel_hesabı(deger-1) * degr;
+		
+	}
 	private:
 		int s1;
 		
