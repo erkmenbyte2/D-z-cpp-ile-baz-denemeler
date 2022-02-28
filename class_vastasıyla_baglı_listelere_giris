@@ -1,0 +1,57 @@
+#include <iostream>
+
+//dassdğağsdaldjkalfjsdf
+//Dugum icin gerekli class oluşturuyoz
+//Struct için şu şekil yapabilirsiniz ama cpp ile çalışmamızın bir amacı olması
+//gerek malum
+
+/*
+
+struct dugum {
+int data
+//n adet kadar x veri tipin de değişken tanımlayabilirsiniz :)
+struct node*sonraki;
+//Bir yukari da ki çokemelli
+//Neyse class ile yola devamke
+}
+
+*/
+using namespace std;
+class Dugum 
+{
+public:
+	Dugum(int veri) {
+		this->veri=veri;
+		sonraki=NULL;
+		
+	}
+	int veri;
+	
+	Dugum * sonraki;
+};
+
+int main(int argc, char** argv) {
+	
+	//Dugumleri main de kullanilabilir hale getirdik
+	Dugum * p = new Dugum(15);
+	Dugum * p1= new Dugum(30);
+	Dugum * p2 = new Dugum(45);
+	Dugum * p3 = new Dugum(60);
+	
+	//Baglı listelerin bağlantıları
+	p->sonraki=p1;
+	p1->sonraki=p2;
+	p2->sonraki=p3;
+	
+	
+	//ilk duğumu tutması gerekcesiyle değişken değiştirme uygulayıoruz;
+	Dugum * bos = p;	
+	//Baglı liste de dolaşıyoruz
+	while(bos->sonraki != 0) {
+		bos=bos->sonraki;
+		
+		cout<<bos->veri<<":nami değer verimiz :D"<<endl;
+		
+	}
+	
+	return 0;
