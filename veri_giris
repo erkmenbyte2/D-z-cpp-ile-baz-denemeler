@@ -1,0 +1,85 @@
+#include <iostream>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+using namespace std;
+class Dugum {
+public:
+	Dugum(int veri);
+	int veri;
+	Dugum * sonraki;
+			
+
+};
+class BaglListe {
+	public:
+		BaglListe();
+		~BaglListe();
+		void ekle(int veri);
+		void yazdr();
+		void ckar(int veri);
+		
+	private:
+
+	Dugum * ilk;
+		
+}
+;
+Dugum::Dugum(int veri) {
+	
+	this->veri= veri;
+	this->sonraki=0;
+	
+	
+}
+BaglListe::BaglListe() {
+	
+	ilk=0;
+}
+BaglListe::~BaglListe() {
+	
+	Dugum * gec = ilk;
+	while(gec!=0) {
+		Dugum * sil = gec;
+		gec=gec->sonraki;
+		delete sil;		
+	}
+}
+void BaglListe::ekle(int veri) {
+	Dugum * yeni = new Dugum(veri);
+	if(ilk==0)
+	{
+		ilk=yeni;
+		
+	}
+	else {
+		Dugum * gec = ilk;
+		while(gec->sonraki!=0) {
+			gec=gec->sonraki;
+		}
+		gec->sonraki=yeni;
+	}
+}
+void BaglListe::yazdr()
+{
+
+	Dugum * gec=ilk;
+	while(gec->sonraki!=0) {
+	cout<<""<<gec->veri<<""<<gec->sonraki<<endl;	
+	}
+	
+	
+}
+int main(int argc, char** argv) {
+	
+	BaglListe *b = new BagListe();
+	
+	for(int a;6<a;a++) {
+		b->ekle(a*a+3*a);
+	}
+	
+	b->yazdr();
+	
+	
+	return 0;
+	
+}
