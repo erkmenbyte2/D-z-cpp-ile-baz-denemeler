@@ -1,0 +1,57 @@
+#include <iostream>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+using namepace std;
+//Seçilen kombinasyonun çalışıp çalışmadığın kontrol eden fonksiyon
+bool kontrol(int dizi[]) {
+
+int c=  sizeof(dizi)/sizeof(dizi[1])
+for(int a=0;c<a;a++) {
+
+if(dizi[a] > dizi[a+1]) {
+        return false;
+}
+else {
+        return true;
+
+}
+
+}
+}
+
+void hesapla_kombinasyon(int dizi[]) {
+
+    //Basitlik olması açısın dan dizinin uzunluğunu c gibi bir değişken tanımlayıp eşitledik
+    int c=sizeof(dizi)/sizeof(dizi[1])
+
+
+    //Bu döngü içerisin de sonda ki elamanı sonuna kadar kaydırıp ardın dan bir azaltık aynı fonksiyona geri koyacak ve doğru sıralamayı elde edene kadar 
+    //Bu döngü bu işlemi takip edecek
+    for(int a=0;a<c;a++) {
+
+        //Dizide ki elamanları değiştirirkene 
+        int bos;
+
+        int f;
+        f=c-a;
+        bos=a[f-1];
+        dizi[f-1]=dizi[f];
+        bos=dizi[f];
+        if(kontrol == false) {
+            a=a-1;
+            contiune;
+        }
+        else {
+            retrun dizi[];
+        }
+
+    }
+
+}
+int main(int argc, char** argv) {
+  
+
+
+    return 0;
+}
