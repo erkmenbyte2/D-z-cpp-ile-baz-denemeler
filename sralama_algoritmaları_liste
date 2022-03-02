@@ -1,0 +1,98 @@
+#include <iostream>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+class sralama_algoritmalar {
+
+
+sralama_algoritmalar(int dizi[]) {
+	
+	
+}
+
+
+public:
+	
+int swap(int dizi[],int a) {
+	
+	 int bos;
+	 bos=dizi[a+1];
+	 dizi[a+1]=dizi[a];
+	 dizi[a]=bos;
+	 
+	 return dizi[];
+		
+}	
+bool kontrol(int dizi[]) {
+	
+	if()
+}
+
+int bublesort(int dizi[]) {
+	
+	int dizi_uzunlugu=sizeof(dizi)/sizeof(dizi[1]);
+	for(int a;a<dizi_uzunlugu;a++) {
+	
+	  if(dizi[a+1] > dizi[a]) {
+			swap(dizi[],a);
+			kontrol();
+				
+	};
+	
+		
+	
+	
+	
+	
+}
+*
+void diziyi_oku() {
+	
+	int 
+	for(int a;)
+	
+}
+
+void selectionSort(int dizi[]) {
+	
+	int b;
+	int sayac;
+	b=0;
+	int dizi_uzunlugu=sizeof(dizi)/sizeof(dizi[1]);
+	
+	for(int a;a<dizi_uzunlugu;a++) {
+		
+		for(int b;b<dizi_uzunlugu;b++) {
+			
+			if(dizi[a+1] > dizi[a]) {
+				sayac++;	
+				
+				if(sayac == 0) {
+					//farklı bir dizi işlemine başvurucaz
+					
+					
+				}
+			}
+		}
+		
+	}
+	
+}
+private:
+
+};
+class arama_algoritmalar {
+
+
+
+	
+};
+
+int main(int argc, char** argv) {
+	
+	
+
+	
+	
+	return 0;
+}
